@@ -46,7 +46,7 @@ def webcam_face_detection():
     # Release the VideoCapture object
     cap.release()
     
-def hog_detector():
+def hog_detector(cap):
     # initialize the HOG descriptor/person detector
     hog = cv2.HOGDescriptor()
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
